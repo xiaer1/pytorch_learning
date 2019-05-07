@@ -9,7 +9,7 @@
 - CrossEntropyLoss()=log_softmax() + NLLLoss()
 log_softmax = log( softmax )
 
-- 学会用logging输出打印日志,以便查看
+2. 学会用logging输出打印日志,以便查看
 	- 导入logging
 	- 配置logging, logging.basicConfig
 	- 使用logging.info
@@ -23,9 +23,16 @@ log_softmax = log( softmax )
 ```
 
 - 使用argmax 和 eq 
-output为numpy, (batch,dim), labels为numpy, (batch,)
+
 ```python
+
+#output为numpy, (batch,dim), labels为numpy, (batch,)
 pred = output.argmax(dim=1,keepdim=True)
 #pred: (batch,1)
 correct += pred.eq(labels.view_as(pred)).sum().item()
+```
+
+- torch保存模型
+```python
+torch.save(model.state_dict(),'mnist_cnn.pt')
 ```
