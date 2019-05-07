@@ -36,3 +36,19 @@ correct += pred.eq(labels.view_as(pred)).sum().item()
 ```python
 torch.save(model.state_dict(),'mnist_cnn.pt')
 ```
+
+- git用法
+#### first push
+```git
+git init
+git add mnist/README.md
+git commit -m "description1"
+git remote add origin https://github.com/wangxiaxiaxia/pytorch_learning.git
+git push -u origin master
+```
+#### second push
+```git
+git add mnist/README.md
+git commit -m "description2"
+git push -u origin master
+```
