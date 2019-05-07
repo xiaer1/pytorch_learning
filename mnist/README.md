@@ -37,7 +37,7 @@ correct += pred.eq(labels.view_as(pred)).sum().item()
 torch.save(model.state_dict(),'mnist_cnn.pt')
 ```
 
-- git用法
+- git usage
 #### first push
 ```git
 git init
