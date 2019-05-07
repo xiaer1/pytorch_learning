@@ -9,7 +9,7 @@
 - CrossEntropyLoss()=log_softmax() + NLLLoss()
 log_softmax = log( softmax )
 
-2. 学会用logging输出打印日志,以便查看
+- 学会用logging输出打印日志,以便查看
 	- 导入logging
 	- 配置logging, logging.basicConfig
 	- 使用logging.info
