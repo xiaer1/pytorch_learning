@@ -10,8 +10,8 @@
 
 
 ### 运行
-train模型:
+- train模型:
 	python main.py  --upscale_factor 4 --nEpochs 60 --batch_size 16
-测试超分辨率:
+- 测试超分辨率:
 	python super_resolve.py --input_img 12003.jpg --model checkpoint_scale4/model_epoch_59.pth --output_img new_scale4.png
 	
